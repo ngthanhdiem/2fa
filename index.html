@@ -52,7 +52,6 @@ body {
   padding: 20px; color: var(--text);
   transition: background 0.3s ease, color 0.3s ease;
 }
-
 .nav {
   position: fixed; top: 20px; left: 20px; right: 20px;
   display: flex; justify-content: space-between; align-items: center;
@@ -81,21 +80,14 @@ body {
 .nav-btn.icon-only { padding: 9px; width: 36px; justify-content: center; }
 .nav-btn.icon-only svg { width: 16px; height: 16px; }
 
-.app {
-  width: 100%; max-width: 460px;
-}
+.app { width: 100%; max-width: 460px; }
 
-.header {
-  text-align: center;
-  margin-bottom: 22px;
-}
+.header { text-align: center; margin-bottom: 22px; }
 .header h1 {
   font-size: 1.35rem; font-weight: 700; margin: 0 0 4px 0;
   color: var(--text); letter-spacing: -0.02em;
 }
-.header p {
-  color: var(--text-3); font-size: 0.82rem; margin: 0;
-}
+.header p { color: var(--text-3); font-size: 0.82rem; margin: 0; }
 
 .panel {
   background: var(--card);
@@ -103,9 +95,7 @@ body {
   border-radius: 16px;
   padding: 16px;
   margin-bottom: 12px;
-  transition: border-color 0.2s ease;
 }
-
 .panel-label {
   display: flex; justify-content: space-between; align-items: center;
   font-size: 0.7rem; font-weight: 600;
@@ -113,10 +103,7 @@ body {
   color: var(--text-3);
   margin-bottom: 10px;
 }
-.panel-label .actions {
-  display: flex; gap: 4px;
-  text-transform: none; letter-spacing: 0;
-}
+.panel-label .actions { display: flex; gap: 4px; text-transform: none; letter-spacing: 0; }
 .mini-btn {
   background: transparent;
   border: 1px solid var(--border);
@@ -193,14 +180,11 @@ textarea::placeholder {
   gap: 12px;
   transition: background 0.15s ease;
   cursor: pointer;
-  position: relative;
 }
 .code-item:hover { background: var(--card-2); }
 .code-item:active { background: var(--bg-2); }
 
-.code-item .meta {
-  flex: 1; min-width: 0;
-}
+.code-item .meta { flex: 1; min-width: 0; }
 .code-item .name {
   font-size: 0.75rem;
   color: var(--text-3);
@@ -244,10 +228,7 @@ textarea::placeholder {
   font-family: ui-monospace, monospace;
 }
 
-.code-item.err {
-  cursor: default;
-  background: rgba(239,68,68,0.06);
-}
+.code-item.err { cursor: default; background: rgba(239,68,68,0.06); }
 .code-item.err .otp {
   color: var(--red);
   font-size: 0.8rem;
@@ -265,11 +246,7 @@ textarea::placeholder {
   border-radius: 14px;
   border: 1px dashed var(--border);
 }
-.empty .icon {
-  font-size: 1.8rem;
-  margin-bottom: 8px;
-  opacity: 0.5;
-}
+.empty .icon { font-size: 1.8rem; margin-bottom: 8px; opacity: 0.5; }
 
 .copy-all {
   width: 100%;
@@ -285,11 +262,9 @@ textarea::placeholder {
   margin-top: 12px;
   display: flex; align-items: center; justify-content: center; gap: 6px;
 }
-.copy-all:hover { transform: translateY(-1px); filter: brightness(1.1); }
-.copy-all:active { transform: translateY(0); }
-.copy-all:disabled {
-  opacity: 0.4; cursor: not-allowed; transform: none; filter: none;
-}
+.copy-all:hover:not(:disabled) { transform: translateY(-1px); filter: brightness(1.1); }
+.copy-all:active:not(:disabled) { transform: translateY(0); }
+.copy-all:disabled { opacity: 0.4; cursor: not-allowed; }
 
 .info-strip {
   display: flex; align-items: center; gap: 8px;
@@ -303,17 +278,10 @@ textarea::placeholder {
   cursor: pointer;
   transition: all 0.15s ease;
 }
-.info-strip:hover {
-  border-color: var(--accent);
-  color: var(--text-2);
-}
+.info-strip:hover { border-color: var(--accent); color: var(--text-2); }
 .info-strip .arrow { margin-left: auto; opacity: 0.5; }
 
-.footer {
-  margin-top: 22px;
-  display: flex;
-  justify-content: center;
-}
+.footer { margin-top: 22px; display: flex; justify-content: center; }
 .tg {
   display: inline-flex; align-items: center; gap: 8px;
   padding: 9px 16px;
@@ -325,11 +293,7 @@ textarea::placeholder {
   font-size: 0.8rem; font-weight: 500;
   transition: all 0.2s ease;
 }
-.tg:hover {
-  border-color: #229ED9;
-  color: #229ED9;
-  transform: translateY(-1px);
-}
+.tg:hover { border-color: #229ED9; color: #229ED9; transform: translateY(-1px); }
 .tg svg { width: 15px; height: 15px; }
 
 .toast {
@@ -367,10 +331,8 @@ textarea::placeholder {
   background: var(--card);
   border: 1px solid var(--border);
   border-radius: 18px;
-  max-width: 500px;
-  width: 100%;
-  max-height: 85vh;
-  overflow-y: auto;
+  max-width: 500px; width: 100%;
+  max-height: 85vh; overflow-y: auto;
   padding: 24px;
   transform: scale(0.96);
   transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
@@ -380,10 +342,7 @@ textarea::placeholder {
   display: flex; justify-content: space-between; align-items: center;
   margin-bottom: 16px;
 }
-.modal-head h2 {
-  font-size: 1.05rem; font-weight: 700; margin: 0;
-  color: var(--text);
-}
+.modal-head h2 { font-size: 1.05rem; font-weight: 700; margin: 0; color: var(--text); }
 .modal-close {
   width: 30px; height: 30px;
   border-radius: 8px;
@@ -397,10 +356,7 @@ textarea::placeholder {
 }
 .modal-close:hover { border-color: var(--red); color: var(--red); }
 .modal-body { color: var(--text-2); font-size: 0.85rem; line-height: 1.65; }
-.modal-body h3 {
-  color: var(--text); font-size: 0.9rem;
-  margin: 18px 0 8px 0; font-weight: 700;
-}
+.modal-body h3 { color: var(--text); font-size: 0.9rem; margin: 18px 0 8px 0; font-weight: 700; }
 .modal-body h3:first-child { margin-top: 0; }
 .modal-body p { margin: 0 0 10px 0; }
 .modal-body ul { padding-left: 20px; margin: 0 0 10px 0; }
@@ -493,7 +449,7 @@ textarea::placeholder {
     <div class="err" id="err"></div>
   </div>
 
-  <div class="panel" style="padding: 0; background: transparent; border: none;">
+  <div style="padding: 0; background: transparent; border: none;">
     <div class="codes" id="codes">
       <div class="empty">
         <div class="icon">🔐</div>
@@ -531,7 +487,7 @@ textarea::placeholder {
     <div class="modal-body">
 
       <div class="callout ok">
-        ✅ Mã 2FA được tạo và lưu <b>hoàn toàn trên máy bạn</b>. Không có dữ liệu nào được gửi lên server hay bên thứ ba. Bạn có thể ngắt mạng sau khi tải trang, web vẫn chạy bình thường.
+        ✅ Mã 2FA được tạo và lưu <b>hoàn toàn trên máy bạn</b>. Không có dữ liệu nào được gửi lên server hay bên thứ ba.
       </div>
 
       <h3>Nhập Secret Key</h3>
@@ -542,7 +498,7 @@ textarea::placeholder {
       </ul>
 
       <h3>Lưu tự động</h3>
-      <p>Secret tự động lưu vào trình duyệt sau khi bạn nhập. Mở lại trang, secret vẫn còn — không cần nhập lại. Bấm <b>🗑 Xóa</b> nếu muốn xóa sạch.</p>
+      <p>Secret tự động lưu vào trình duyệt sau khi bạn nhập. Mở lại trang, secret vẫn còn. Bấm <b>🗑 Xóa</b> nếu muốn xóa sạch.</p>
 
       <h3>Bấm để copy</h3>
       <p>Bấm vào mã để copy nhanh vào clipboard. Hoặc bấm <b>📋 Copy tất cả mã</b> để copy cả danh sách.</p>
@@ -598,66 +554,84 @@ textarea::placeholder {
     toastTimer = setTimeout(() => toast.classList.remove('show'), 1700);
   }
 
-  function base32Decode(input) {
-    const cleaned = String(input).replace(/[\s\-]/g, '').toUpperCase();
-    if (!cleaned) throw new Error('Secret rỗng');
+  function base32Decode(base32Str) {
+    const cleaned = base32Str.replace(/[\s-]/g, '').toUpperCase();
     if (!/^[A-Z2-7]+=*$/.test(cleaned)) {
-      throw new Error('Secret không hợp lệ');
+      throw new Error('Secret key không hợp lệ. Chỉ dùng A-Z và 2-7.');
     }
-    const s = cleaned.replace(/=+$/, '');
-    let bits = 0, value = 0;
-    const out = [];
-    for (let i = 0; i < s.length; i++) {
-      const idx = ALPHABET.indexOf(s[i]);
-      if (idx < 0) throw new Error('Ký tự lạ: ' + s[i]);
-      value = value * 32 + idx;
+    const noPadding = cleaned.replace(/=+$/, '');
+    if (noPadding.length === 0) {
+      throw new Error('Secret key rỗng.');
+    }
+
+    const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ234567';
+    let bits = 0;
+    let value = 0;
+    const bytes = [];
+
+    for (let i = 0; i < noPadding.length; i++) {
+      const char = noPadding[i];
+      const idx = alphabet.indexOf(char);
+      if (idx === -1) {
+        throw new Error('Ký tự không hợp lệ: ' + char);
+      }
+      value = (value << 5) | idx;
       bits += 5;
+
       if (bits >= 8) {
+        bytes.push((value >>> (bits - 8)) & 0xFF);
         bits -= 8;
-        out.push((value >>> bits) & 0xFF);
       }
     }
-    if (out.length === 0) throw new Error('Secret không hợp lệ');
-    return new Uint8Array(out);
+
+    if (bits > 0) {
+      bytes.push((value << (8 - bits)) & 0xFF);
+    }
+
+    if (bytes.length === 0) {
+      throw new Error('Secret key không hợp lệ (không giải mã được byte).');
+    }
+    return new Uint8Array(bytes);
   }
 
-  async function hmacSha1(keyBytes, msgBytes) {
-    const key = await crypto.subtle.importKey(
-      'raw', keyBytes, { name: 'HMAC', hash: 'SHA-1' }, false, ['sign']
+  async function hmacSha1(keyBytes, messageBytes) {
+    const cryptoKey = await crypto.subtle.importKey(
+      'raw',
+      keyBytes,
+      { name: 'HMAC', hash: 'SHA-1' },
+      false,
+      ['sign']
     );
-    const sig = await crypto.subtle.sign('HMAC', key, msgBytes);
-    return new Uint8Array(sig);
+    const signature = await crypto.subtle.sign(
+      'HMAC',
+      cryptoKey,
+      messageBytes
+    );
+    return new Uint8Array(signature);
   }
 
-  function counterToBytes(counter) {
-    const buf = new Uint8Array(8);
-    const hi = Math.floor(counter / 0x100000000);
-    const lo = counter >>> 0;
-    buf[0] = (hi >>> 24) & 0xFF;
-    buf[1] = (hi >>> 16) & 0xFF;
-    buf[2] = (hi >>> 8)  & 0xFF;
-    buf[3] = hi & 0xFF;
-    buf[4] = (lo >>> 24) & 0xFF;
-    buf[5] = (lo >>> 16) & 0xFF;
-    buf[6] = (lo >>> 8)  & 0xFF;
-    buf[7] = lo & 0xFF;
-    return buf;
-  }
+  async function generateTOTP(secretBytes, period, digits, timestamp) {
+    const counter = Math.floor(timestamp / 1000 / period);
 
-  async function totp(secretBytes, timestampMs) {
-    const counter = Math.floor(timestampMs / 1000 / PERIOD);
-    const hmac = await hmacSha1(secretBytes, counterToBytes(counter));
+    const counterBytes = new Uint8Array(8);
+    let temp = counter;
+    for (let i = 7; i >= 0; i--) {
+      counterBytes[i] = temp & 0xFF;
+      temp = Math.floor(temp / 256);
+    }
+
+    const hmac = await hmacSha1(secretBytes, counterBytes);
+
     const offset = hmac[hmac.length - 1] & 0x0F;
+
     const binary =
-      ((hmac[offset]     & 0x7F) << 24) |
+      ((hmac[offset] & 0x7F) << 24) |
       ((hmac[offset + 1] & 0xFF) << 16) |
-      ((hmac[offset + 2] & 0xFF) << 8)  |
-      ( hmac[offset + 3] & 0xFF);
-    const code = binary % Math.pow(10, DIGITS);
-    return {
-      code: String(code).padStart(DIGITS, '0'),
-      counter: counter
-    };
+      ((hmac[offset + 2] & 0xFF) << 8) |
+      (hmac[offset + 3] & 0xFF);
+
+    const otp = binary % Math.pow(10, digits);
+    return otp.toString().padStart(digits, '0');
   }
 
   function parseInput(raw) {
@@ -712,7 +686,7 @@ textarea::placeholder {
       if (item.error) {
         otp.textContent = '⚠ ' + item.error;
       } else {
-        otp.textContent = '••• •••';
+        otp.textContent = '------';
         otp.dataset.code = '';
       }
       meta.appendChild(otp);
@@ -798,9 +772,9 @@ textarea::placeholder {
       if (!otp) continue;
 
       try {
-        const r = await totp(item.bytes, now);
-        otp.textContent = r.code;
-        otp.dataset.code = r.code;
+        const code = await generateTOTP(item.bytes, PERIOD, DIGITS, now);
+        otp.textContent = code;
+        otp.dataset.code = code;
       } catch (e) {
         otp.textContent = '⚠ Lỗi';
       }
@@ -895,7 +869,6 @@ textarea::placeholder {
   clearBtn.addEventListener('click', clearStorage);
   secretInput.addEventListener('input', onInput);
 
-  // Theme
   const savedTheme = localStorage.getItem(THEME_KEY) || 'dark';
   document.documentElement.setAttribute('data-theme', savedTheme);
   updateThemeIcon(savedTheme);
@@ -916,7 +889,6 @@ textarea::placeholder {
     localStorage.setItem(THEME_KEY, next);
   });
 
-  // Modal
   function openModal() {
     helpModal.classList.add('active');
     document.body.style.overflow = 'hidden';
@@ -933,7 +905,6 @@ textarea::placeholder {
     if (e.key === 'Escape' && helpModal.classList.contains('active')) closeModalFn();
   });
 
-  // Init
   const loaded = loadFromStorage(true);
   if (!loaded) {
     secretInput.value = '';
